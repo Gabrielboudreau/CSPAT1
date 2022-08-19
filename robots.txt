@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://gabrielboudreau.github.io/CSPAT1/sitemap.xml
