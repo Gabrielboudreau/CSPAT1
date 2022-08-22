@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "Jupyter Notebook Python Test TT0",
             "content": "print(&quot;Hello&quot;) . Hello .",
             "url": "https://gabrielboudreau.github.io/CSPAT1/2022/08/21/pythontest.html",
             "relUrl": "/2022/08/21/pythontest.html",
@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "Title",
+            "title": "Jupyter Notebook Java Test TT0",
             "content": "class Hello { public static void main(String[] args) { System.out.println(&quot;Hello&quot;); } } Hello.main(null); . Hello .",
             "url": "https://gabrielboudreau.github.io/CSPAT1/2022/08/21/javatest.html",
             "relUrl": "/2022/08/21/javatest.html",
