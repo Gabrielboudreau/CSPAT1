@@ -153,24 +153,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1.0
-1.002985
-19.92457
-0.84485
-136.45
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -181,20 +163,32 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.math.BigDecimal</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.math.RoundingMode</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Converter</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">Scanner</span> <span class="n">input</span><span class="p">;</span>
+        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Double</span><span class="o">&gt;</span> <span class="n">converter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Double</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="n">converter</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;dollar&quot;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+        <span class="n">converter</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;euro&quot;</span><span class="p">,</span> <span class="mf">1.0029</span><span class="p">);</span>
+        <span class="n">converter</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;peso&quot;</span><span class="p">,</span> <span class="mf">.0502</span><span class="p">);</span>
+        <span class="n">converter</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;pound&quot;</span><span class="p">,</span> <span class="mf">1.1904</span><span class="p">);</span>
+        <span class="n">converter</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;yen&quot;</span><span class="p">,</span> <span class="mf">.0073</span><span class="p">);</span>
+        
+        
         <span class="kt">double</span> <span class="n">dollar</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
         <span class="kt">double</span> <span class="n">euro</span> <span class="o">=</span> <span class="mf">1.002985</span><span class="p">;</span>
         <span class="kt">double</span> <span class="n">peso</span> <span class="o">=</span> <span class="mf">19.92457</span><span class="p">;</span>
         <span class="kt">double</span> <span class="n">pound</span> <span class="o">=</span> <span class="mf">0.84485</span><span class="p">;</span>
         <span class="kt">double</span> <span class="n">yen</span> <span class="o">=</span> <span class="mf">136.45</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">amountOfConversions</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">amountOfCurrency</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">first</span> <span class="o">=</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">second</span> <span class="o">=</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
         
         <span class="n">input</span> <span class="o">=</span>  <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;What is your name? &quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;What is your name? &quot;</span><span class="p">);</span>
         <span class="k">try</span> <span class="p">{</span>
             <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span> <span class="s">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;. Welcome to our currency converter.&quot;</span><span class="p">);</span>
@@ -203,15 +197,42 @@ window.onload = wrap_img;
         <span class="p">}</span>
         <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
         
-        <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;How many conversions would you like to make today? &quot;</span><span class="p">);</span>
+        <span class="n">input</span> <span class="o">=</span>  <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;What currency would like to convert? &quot;</span><span class="p">);</span>
         <span class="k">try</span> <span class="p">{</span>
-            <span class="n">amountOfConversions</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+            <span class="n">first</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+            
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// this may never happen</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span> <span class="o">+</span> <span class="s">&quot; is not a name.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
+        <span class="n">input</span> <span class="o">=</span>  <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;What would you like to convert it to? &quot;</span><span class="p">);</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="n">second</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+            
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// this may never happen</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span> <span class="o">+</span> <span class="s">&quot; is not a name.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
+        <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;How many &quot;</span> <span class="o">+</span> <span class="n">first</span> <span class="o">+</span> <span class="s">&quot;s are you converting? &quot;</span><span class="p">);</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="n">amountOfCurrency</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
         <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// if not an integer</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Please enter a whole number&quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
         <span class="p">}</span>
         <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
+        <span class="kt">double</span> <span class="n">first1</span> <span class="o">=</span> <span class="n">converter</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">first</span><span class="p">);</span>
+        <span class="kt">double</span> <span class="n">second1</span> <span class="o">=</span> <span class="n">converter</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">second</span><span class="p">);</span>
+        <span class="kt">double</span> <span class="n">output</span> <span class="o">=</span> <span class="p">((</span><span class="n">amountOfCurrency</span> <span class="o">*</span> <span class="n">first1</span><span class="p">)</span> <span class="o">/</span> <span class="n">second1</span><span class="p">);</span>
+        <span class="n">BigDecimal</span> <span class="n">bd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="p">(</span><span class="n">output</span><span class="p">).</span><span class="na">setScale</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">RoundingMode</span><span class="p">.</span><span class="na">HALF_UP</span><span class="p">);</span>
+        <span class="kt">double</span> <span class="n">outputRounded</span> <span class="o">=</span> <span class="n">bd</span><span class="p">.</span><span class="na">doubleValue</span><span class="p">();</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">amountOfCurrency</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">first</span> <span class="o">+</span> <span class="s">&quot;s is equal to &quot;</span> <span class="o">+</span> <span class="n">outputRounded</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">second</span> <span class="o">+</span> <span class="s">&quot;s&quot;</span><span class="p">);</span>
     <span class="p">}</span>    
 <span class="p">}</span>
 <span class="n">Converter</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
@@ -227,8 +248,13 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>What is your name? Hello gabe. Welcome to our currency converter.
-How many conversions would you like to make today? </pre>
+<pre>What is your name? 
+Hello Gabriel. Welcome to our currency converter.
+What currency would like to convert? 
+What would you like to convert it to? 
+How many pounds are you converting? 
+5000 pounds is equal to 5934.79 euros
+</pre>
 </div>
 </div>
 
