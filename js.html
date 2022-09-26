@@ -73,27 +73,35 @@ window.onload = wrap_img;
     <div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large"></div>
     <form>
         <label for="answer" class="button"></label>
-        <input name="answer" id="answer">
-        <button class="button" onclick="addAnother()">Add Another value</button>
-        <button class="button" onclick="SD()">Calculate</button>
+        <input type="text" name="answer" id="answer">
+        <button class="button" id = "addElement">Add Another value</button>
+        <button class="button" id = "Calculate">Calculate</button>
     </form>
     <p id="result"></p>
 
 </body>
 <script> 
     var array = [];
+    
     var value;
-
-    function addAnother(){
-        value = document.getElementById("answer");
+    var result;
+    var calcButt = document.getElementById("Calculate");
+    var addElement = document.getElementById("addElement");
+    addElement.onclick = function addAnother(event){
+        event.preventDefault();
+        value = document.getElementById("answer").value;
         array.push(value);
+        document.getElementById("result").innerHTML = (value);
     }
-    function SD(){
+    calcButt.onclick = function(event){
+        event.preventDefault();
+        var sum = 0;
         for (let i = 0; i < array.length; i++) {
-            sum += arr[i];
+            
+            sum += array[i];
         }
         result = (sum/array.length)
-        document.getElementById("result").innerHTML = (result)
+        document.getElementById("result").innerHTML = (result);
     }
 </script> 
       </div>
