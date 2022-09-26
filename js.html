@@ -74,28 +74,27 @@ window.onload = wrap_img;
     <form>
         <label for="answer" class="button"></label>
         <input name="answer" id="answer">
-        <button class="button" onclick="fibonacci()">Submit</button>
+        <button class="button" onclick="addAnother()">Add Another value</button>
+        <button class="button" onclick="SD()">Calculate</button>
     </form>
     <p id="result"></p>
 
 </body>
 <script> 
-    var a = 0;
-    var b = 1; 
-    var c = "";
-    var length = document.getElementById("answer").value;
-    var sequence = []; 
-    document.getElementById("result").innerHTML = ("")
-    function fibonacci(){
-        for (let i = 0; i < length; i++) {
-            a + b == c
-            sequence.push(c);
-            a = b
-            b = c
-        }
-        document.getElementById("result").innerHTML = ("Your fibonacci sequence is: " + sequence)
+    var array = [];
+    var value;
+
+    function addAnother(){
+        value = document.getElementById("answer");
+        array.push(value);
     }
-    console.out("Words and stuff" + a); 
+    function SD(){
+        for (let i = 0; i < array.length; i++) {
+            sum += arr[i];
+        }
+        result = (sum/array.length)
+        document.getElementById("result").innerHTML = (result)
+    }
 </script> 
       </div>
     </main><footer class="site-footer h-card">
