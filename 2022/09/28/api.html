@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Title | Gabriel Boudreau - CSA</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://gabrielboudreau.github.io/CSPAT1/2022/09/28/api.html" />
+<meta property="og:url" content="https://gabrielboudreau.github.io/CSPAT1/2022/09/28/api.html" />
+<meta property="og:site_name" content="Gabriel Boudreau - CSA" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-28T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-28T00:00:00-05:00","datePublished":"2022-09-28T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabrielboudreau.github.io/CSPAT1/2022/09/28/api.html"},"url":"https://gabrielboudreau.github.io/CSPAT1/2022/09/28/api.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/CSPAT1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gabrielboudreau.github.io/CSPAT1/feed.xml" title="Gabriel Boudreau - CSA" /><link rel="shortcut icon" type="image/x-icon" href="/CSPAT1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/CSPAT1/">Gabriel Boudreau - CSA</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/CSPAT1/about/">About Me</a><a class="page-link" href="/CSPAT1/js">JS</a><a class="page-link" href="/CSPAT1/search/">Search</a><a class="page-link" href="/CSPAT1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-28T00:00:00-05:00" itemprop="datePublished">
+        Sep 28, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Gabrielboudreau/CSPAT1/tree/master/_notebooks/2022-09-28-api.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/CSPAT1/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Gabrielboudreau/CSPAT1/master?filepath=_notebooks%2F2022-09-28-api.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/CSPAT1/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Gabrielboudreau/CSPAT1/blob/master/_notebooks/2022-09-28-api.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/CSPAT1/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FGabrielboudreau%2FCSPAT1%2Fblob%2Fmaster%2F_notebooks%2F2022-09-28-api.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/CSPAT1/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-28-api.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="o">%</span><span class="n">maven</span> <span class="n">org</span><span class="p">.</span><span class="na">json</span><span class="p">:</span><span class="n">json</span><span class="p">:</span><span class="mi">20220924</span>
+<span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Income</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="p">,</span> <span class="n">InterruptedException</span> <span class="p">{</span>
+        <span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+		<span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">&quot;https://stock-data3.p.rapidapi.com/AAPL&quot;</span><span class="p">))</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">&quot;X-RapidAPI-Key&quot;</span><span class="p">,</span> <span class="s">&quot;ecb94c2f04msh8b91e6975ba00b9p1028a2jsnd5f3f3bfd1fe&quot;</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">&quot;X-RapidAPI-Host&quot;</span><span class="p">,</span> <span class="s">&quot;stock-data3.p.rapidapi.com&quot;</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">&quot;GET&quot;</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+		<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">Income</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#34;Index&#34;:&#34;DJIA S&amp;P500&#34;,&#34;P\/E&#34;:&#34;22.84&#34;,&#34;EPS (ttm)&#34;:&#34;6.05&#34;,&#34;Insider Own&#34;:&#34;0.07%&#34;,&#34;Shs Outstand&#34;:&#34;16.16B&#34;,&#34;Perf Week&#34;:&#34;-8.13%&#34;,&#34;Market Cap&#34;:&#34;2289.76B&#34;,&#34;Forward P\/E&#34;:&#34;21.38&#34;,&#34;EPS next Y&#34;:&#34;5.86%&#34;,&#34;Insider Trans&#34;:&#34;-2.44%&#34;,&#34;Shs Float&#34;:&#34;16.06B&#34;,&#34;Perf Month&#34;:&#34;-12.10%&#34;,&#34;Income&#34;:&#34;99.63B&#34;,&#34;PEG&#34;:&#34;2.41&#34;,&#34;EPS next Q&#34;:&#34;2.13&#34;,&#34;Inst Own&#34;:&#34;59.90%&#34;,&#34;Short Float&#34;:&#34;0.72%&#34;,&#34;Perf Quarter&#34;:&#34;-0.53%&#34;,&#34;Sales&#34;:&#34;387.54B&#34;,&#34;P\/S&#34;:&#34;5.91&#34;,&#34;EPS this Y&#34;:&#34;71.40%&#34;,&#34;Inst Trans&#34;:&#34;-0.45%&#34;,&#34;Short Ratio&#34;:&#34;1.48&#34;,&#34;Perf Half Y&#34;:&#34;-20.85%&#34;,&#34;Book\/sh&#34;:&#34;3.60&#34;,&#34;P\/B&#34;:&#34;38.39&#34;,&#34;ROA&#34;:&#34;28.10%&#34;,&#34;Target Price&#34;:&#34;183.50&#34;,&#34;Perf Year&#34;:&#34;-2.33%&#34;,&#34;Cash\/sh&#34;:&#34;2.91&#34;,&#34;P\/C&#34;:&#34;47.47&#34;,&#34;EPS next 5Y&#34;:&#34;9.48%&#34;,&#34;ROE&#34;:&#34;153.00%&#34;,&#34;52W Range&#34;:&#34;129.04 - 182.94&#34;,&#34;Perf YTD&#34;:&#34;-22.17%&#34;,&#34;Dividend&#34;:&#34;0.92&#34;,&#34;P\/FCF&#34;:&#34;24.67&#34;,&#34;EPS past 5Y&#34;:&#34;22.00%&#34;,&#34;ROI&#34;:&#34;50.00%&#34;,&#34;52W High&#34;:&#34;-24.46%&#34;,&#34;Beta&#34;:&#34;1.25&#34;,&#34;Dividend %&#34;:&#34;0.67%&#34;,&#34;Quick Ratio&#34;:&#34;0.80&#34;,&#34;Sales past 5Y&#34;:&#34;11.10%&#34;,&#34;Gross Margin&#34;:&#34;43.30%&#34;,&#34;52W Low&#34;:&#34;7.10%&#34;,&#34;ATR&#34;:&#34;4.92&#34;,&#34;Employees&#34;:&#34;154000&#34;,&#34;Current Ratio&#34;:&#34;0.90&#34;,&#34;Sales Q\/Q&#34;:&#34;1.90%&#34;,&#34;Oper. Margin&#34;:&#34;30.50%&#34;,&#34;RSI (14)&#34;:&#34;28.54&#34;,&#34;Volatility&#34;:&#34;3.59% 2.94%&#34;,&#34;Optionable&#34;:&#34;Yes&#34;,&#34;Debt\/Eq&#34;:&#34;2.06&#34;,&#34;EPS Q\/Q&#34;:&#34;-7.70%&#34;,&#34;Profit Margin&#34;:&#34;25.70%&#34;,&#34;Rel Volume&#34;:&#34;1.58&#34;,&#34;Prev Close&#34;:&#34;142.48&#34;,&#34;Shortable&#34;:&#34;Yes&#34;,&#34;LT Debt\/Eq&#34;:&#34;1.63&#34;,&#34;Earnings&#34;:&#34;Oct 27 AMC&#34;,&#34;Payout&#34;:&#34;14.60%&#34;,&#34;Avg Volume&#34;:&#34;78.38M&#34;,&#34;Price&#34;:&#34;138.20&#34;,&#34;Recom&#34;:&#34;1.90&#34;,&#34;SMA20&#34;:&#34;-10.11%&#34;,&#34;SMA50&#34;:&#34;-13.67%&#34;,&#34;SMA200&#34;:&#34;-13.65%&#34;,&#34;Volume&#34;:&#34;124,206,869&#34;,&#34;Change&#34;:&#34;-3.00%&#34;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/CSPAT1/2022/09/28/api.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/CSPAT1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/CSPAT1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/CSPAT1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
