@@ -134,36 +134,37 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
 
-<span class="kd">class</span> <span class="nc">printsTring</span> <span class="p">{</span>
+<span class="kd">class</span> <span class="nc">array</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
 
         <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span> 
-
-        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
-        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">2.0</span><span class="p">);</span>
-        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">3.0</span><span class="p">);</span>
+        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">8.0</span><span class="p">);</span>
         <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">4.0</span><span class="p">);</span>
-        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">5.0</span><span class="p">);</span>
-        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">6.0</span><span class="p">);</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;First Array List &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
-
-        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">);</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Second Array List &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
-
-        <span class="n">numbers</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="k">new</span> <span class="n">Double</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Third Array List &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
-
+        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span> <span class="p">(</span><span class="mf">3.0</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Add element: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
+        <span class="n">numbers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Add: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
+        <span class="n">numbers</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="k">new</span> <span class="n">Double</span><span class="p">(</span><span class="mi">3</span><span class="p">));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Remove element: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
         <span class="kt">double</span> <span class="n">size</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">size</span><span class="p">);</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Index of 6: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="mi">6</span><span class="p">));</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Has 5: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Has 4: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="mi">4</span><span class="p">));</span>
-
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The size of the list is: &quot;</span> <span class="o">+</span> <span class="n">size</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Has 9: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="mi">9</span><span class="p">));</span>
+        <span class="kt">double</span> <span class="n">middle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">middle</span> <span class="o">=</span> <span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The median of the list is &quot;</span> <span class="o">+</span> <span class="n">middle</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="n">middle</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The median of the list is &quot;</span> <span class="o">+</span> <span class="n">middle</span><span class="p">);</span>
+        <span class="p">}</span>        
+        <span class="kt">double</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">Double</span> <span class="n">i</span><span class="p">:</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">i</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kt">double</span> <span class="n">mean</span> <span class="o">=</span> <span class="n">sum</span><span class="o">/</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The mean value of the list is: &quot;</span> <span class="o">+</span> <span class="n">mean</span><span class="p">);</span>
         <span class="n">Comparator</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">comparator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Comparator</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
 
             <span class="nd">@Override</span>
@@ -183,50 +184,13 @@ window.onload = wrap_img;
 
             <span class="p">}</span>
         <span class="p">};</span>
-    
-
         <span class="n">numbers</span><span class="p">.</span><span class="na">sort</span><span class="p">(</span><span class="n">comparator</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Sorted list &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">);</span>
-
-        <span class="kt">double</span> <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="k">for</span> <span class="p">(</span><span class="n">Double</span> <span class="n">i</span><span class="p">:</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="kt">double</span> <span class="n">mean</span> <span class="o">=</span> <span class="n">total</span><span class="o">/</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
-
-
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The mean of the list is &quot;</span> <span class="o">+</span> <span class="n">mean</span><span class="p">);</span>
-
-        
-        <span class="kt">double</span> <span class="n">middle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="k">if</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">middle</span> <span class="o">=</span> <span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The median of the list is &quot;</span> <span class="o">+</span> <span class="n">middle</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="p">{</span>
-            <span class="n">middle</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The median of the list is &quot;</span> <span class="o">+</span> <span class="n">middle</span><span class="p">);</span>
-        <span class="p">}</span>
-        
-        <span class="kt">double</span> <span class="n">total2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="k">for</span> <span class="p">(</span><span class="n">Double</span> <span class="n">k</span><span class="p">:</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">total2</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">((</span><span class="n">mean</span> <span class="o">-</span> <span class="n">k</span><span class="p">),</span> <span class="mi">2</span><span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="kt">double</span> <span class="n">standardDeviation</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span> <span class="nf">sqrt</span><span class="p">((</span><span class="n">total2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">));</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The Standard Deviation for this set is &quot;</span> <span class="o">+</span> <span class="n">standardDeviation</span><span class="p">);</span>
-
     <span class="p">}</span>
 
 <span class="p">}</span>
 
-<span class="n">printsTring</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+<span class="n">array</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -239,17 +203,14 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>First Array List [1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
-Second Array List [1.0, 7.0, 2.0, 3.0, 4.0, 5.0, 6.0]
-Third Array List [1.0, 7.0, 2.0, 3.0, 4.0, 6.0]
-6.0
-Index of 6: -1
-Has 5: false
-Has 4: false
-Sorted list [1.0, 2.0, 3.0, 4.0, 6.0, 7.0]
-The mean of the list is 3.8333333333333335
-The median of the list is 3.5
-The Standard Deviation for this set is 1.4161763857498668
+<pre>Add element: [8.0, 4.0, 3.0]
+Add: [8.0, 4.0, 3.0, 10.0]
+Remove element: [8.0, 4.0, 10.0]
+The size of the list is: 3.0
+Has 9: false
+The median of the list is 4.0
+The mean value of the list is: 7.333333333333333
+Sorted list [4.0, 8.0, 10.0]
 </pre>
 </div>
 </div>

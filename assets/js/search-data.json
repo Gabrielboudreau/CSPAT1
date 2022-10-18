@@ -4,9 +4,9 @@
         "post0": {
             "title": "Jupyter Notebook Python Test TT0",
             "content": "print(&quot;Hello&quot;) . Hello .",
-            "url": "https://gabrielboudreau.github.io/CSPAT1/2022/10/11/pythontest.html",
-            "relUrl": "/2022/10/11/pythontest.html",
-            "date": " • Oct 11, 2022"
+            "url": "https://gabrielboudreau.github.io/CSPAT1/2022/10/17/pythontest.html",
+            "relUrl": "/2022/10/17/pythontest.html",
+            "date": " • Oct 17, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Jupyter Notebook Java Test TT0",
             "content": "class Hello { public static void main(String[] args) { System.out.println(&quot;Hello&quot;); } } Hello.main(null); . Hello .",
-            "url": "https://gabrielboudreau.github.io/CSPAT1/2022/10/11/javatest.html",
-            "relUrl": "/2022/10/11/javatest.html",
-            "date": " • Oct 11, 2022"
+            "url": "https://gabrielboudreau.github.io/CSPAT1/2022/10/17/javatest.html",
+            "relUrl": "/2022/10/17/javatest.html",
+            "date": " • Oct 17, 2022"
         }
         
     
@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Title",
-            "content": "import java.util.*; class printsTring { public static void main(String args[]) { ArrayList&lt;Double&gt; numbers = new ArrayList&lt;&gt;(); numbers.add (1.0); numbers.add (2.0); numbers.add (3.0); numbers.add (4.0); numbers.add (5.0); numbers.add (6.0); System.out.println(&quot;First Array List &quot; + numbers); numbers.add(1, 7.0); System.out.println(&quot;Second Array List &quot; + numbers); numbers.remove(new Double(5)); System.out.println(&quot;Third Array List &quot; + numbers); double size = numbers.size(); System.out.println(size); System.out.println(&quot;Index of 6: &quot; + numbers.indexOf(6)); System.out.println(&quot;Has 5: &quot; + numbers.contains(5)); System.out.println(&quot;Has 4: &quot; + numbers.contains(4)); Comparator&lt;Double&gt; comparator = new Comparator&lt;Double&gt;() { @Override public int compare(Double numbers, Double numbers1) { if (numbers &gt; numbers1 ) { return 1; } else if (numbers &lt; numbers1) { return -1; } else { return 0; } } }; numbers.sort(comparator); System.out.println(&quot;Sorted list &quot; + numbers); double total = 0; for (Double i: numbers) { total = total + i; } double mean = total/numbers.size(); System.out.println(&quot;The mean of the list is &quot; + mean); double middle = 0; if(numbers.size() %2 == 0) { middle = (numbers.get(numbers.size()/2 - 1) + numbers.get(numbers.size()/2-3)/2); System.out.println(&quot;The median of the list is &quot; + middle); } else { middle = numbers.get(numbers.size() / 2); System.out.println(&quot;The median of the list is &quot; + middle); } double total2 = 0; for (Double k: numbers) { total2 = Math.pow((mean - k), 2); } double standardDeviation = Math. sqrt((total2)/(numbers.size()-1)); System.out.println(&quot;The Standard Deviation for this set is &quot; + standardDeviation); } } printsTring.main(null) . First Array List [1.0, 2.0, 3.0, 4.0, 5.0, 6.0] Second Array List [1.0, 7.0, 2.0, 3.0, 4.0, 5.0, 6.0] Third Array List [1.0, 7.0, 2.0, 3.0, 4.0, 6.0] 6.0 Index of 6: -1 Has 5: false Has 4: false Sorted list [1.0, 2.0, 3.0, 4.0, 6.0, 7.0] The mean of the list is 3.8333333333333335 The median of the list is 3.5 The Standard Deviation for this set is 1.4161763857498668 .",
+            "content": "import java.util.*; class array { public static void main(String args[]) { ArrayList&lt;Double&gt; numbers = new ArrayList&lt;&gt;(); numbers.add (8.0); numbers.add (4.0); numbers.add (3.0); System.out.println(&quot;Add element: &quot; + numbers); numbers.add(3, 10.0); System.out.println(&quot;Add: &quot; + numbers); numbers.remove(new Double(3)); System.out.println(&quot;Remove element: &quot; + numbers); double size = numbers.size(); System.out.println(&quot;The size of the list is: &quot; + size); System.out.println(&quot;Has 9: &quot; + numbers.contains(9)); double middle = 0; if(numbers.size() %2 == 0) { middle = (numbers.get(numbers.size()/2 - 1) + numbers.get(numbers.size()/2-3)/2); System.out.println(&quot;The median of the list is &quot; + middle); } else { middle = numbers.get(numbers.size() / 2); System.out.println(&quot;The median of the list is &quot; + middle); } double sum = 0; for (Double i: numbers) { sum = sum + i; } double mean = sum/numbers.size(); System.out.println(&quot;The mean value of the list is: &quot; + mean); Comparator&lt;Double&gt; comparator = new Comparator&lt;Double&gt;() { @Override public int compare(Double numbers, Double numbers1) { if (numbers &gt; numbers1 ) { return 1; } else if (numbers &lt; numbers1) { return -1; } else { return 0; } } }; numbers.sort(comparator); System.out.println(&quot;Sorted list &quot; + numbers); } } array.main(null) . Add element: [8.0, 4.0, 3.0] Add: [8.0, 4.0, 3.0, 10.0] Remove element: [8.0, 4.0, 10.0] The size of the list is: 3.0 Has 9: false The median of the list is 4.0 The mean value of the list is: 7.333333333333333 Sorted list [4.0, 8.0, 10.0] .",
             "url": "https://gabrielboudreau.github.io/CSPAT1/2022/10/07/arrayList.html",
             "relUrl": "/2022/10/07/arrayList.html",
             "date": " • Oct 7, 2022"
