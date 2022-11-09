@@ -59,6 +59,6 @@ Overall I worked far harder this tri and communicated within my group well. We w
 
 ### Bad
 
-My biggest drawbacks for this tri was catching after I was sick, and understanding of some key concepts. My hardest unit was loops and iteration. I need to work on a deeper understanding of this topic as it is very important, however how the elements of certain loops interacted with paramters presented and methods was a challenge. My other challenge was catching up on work I missed, and I almost entirely gave up on catching up as I was still very focused on the current work at hand. 
+My biggest drawbacks for this tri was catching after I was sick, and understanding of some key concepts. My hardest unit was loops and iteration. I need to work on a deeper understanding of this topic as it is very important, however how the elements of certain loops interacted with paramters presented and methods was a challenge. My other challenge was catching up on work I missed, and I almost entirely gave up on catching up as I was still very focused on the current work at hand. Organzation of personal site was also poorly done. 
 
 ## Extra Credit Poster
