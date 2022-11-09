@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://gabrielboudreau.github.io/CSPAT1/2022/08/19/javatest.html</loc>
+<lastmod>2022-08-19T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://gabrielboudreau.github.io/CSPAT1/2022/08/19/pythontest.html</loc>
+<lastmod>2022-08-19T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://gabrielboudreau.github.io/CSPAT1/pbl/2022/08/21/TT0-post.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
@@ -49,10 +57,6 @@
 <lastmod>2022-09-22T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://gabrielboudreau.github.io/CSPAT1/2022/09/25/designSetup.html</loc>
-<lastmod>2022-09-25T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://gabrielboudreau.github.io/CSPAT1/2022/09/27/practiceJava.html</loc>
 <lastmod>2022-09-27T00:00:00-05:00</lastmod>
 </url>
@@ -75,14 +79,6 @@
 <url>
 <loc>https://gabrielboudreau.github.io/CSPAT1/pbl/2022/10/23/projectDemonstrations.html</loc>
 <lastmod>2022-10-23T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://gabrielboudreau.github.io/CSPAT1/2022/11/08/javatest.html</loc>
-<lastmod>2022-11-08T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://gabrielboudreau.github.io/CSPAT1/2022/11/08/pythontest.html</loc>
-<lastmod>2022-11-08T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://gabrielboudreau.github.io/CSPAT1/other/2022/11/09/reflection.html</loc>
